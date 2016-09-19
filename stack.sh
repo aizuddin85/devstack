@@ -285,7 +285,8 @@ name=Bootstrap EPEL
 mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-7&arch=\$basearch
 failovermethod=priority
 enabled=0
-gpgcheck=0
+gpgcheck=1
+gpgkey=https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7Server
 EOF
     # Enable a bootstrap repo.  It is removed after finishing
     # the epel-release installation.
